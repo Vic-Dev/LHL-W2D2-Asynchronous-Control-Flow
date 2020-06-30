@@ -1,7 +1,7 @@
 # Asynchronous Control Flow
 
 ## Overview
-- sub 1: Maybe Review?
+- Review
 1. Synchronous Control Flow
 2. Asynchronous Control Flow
 3. Asynchronous Actions
@@ -9,7 +9,7 @@
   - Filesystem functions
   - Events and event handling
 
-## sub 1: Review:
+## Review:
   - A function
   - Callbacks - how do callbacks work?
   - Higher-order function: a function that takes a function as a callback.
@@ -27,6 +27,8 @@
   - Cooking breakfast in the kitchen example
   - Philip Roberts more in depth example
 
+## 3. Asynchronous Actions
+
 ### `setTimeout` and `setInterval` builtin functions
   - `setTimeout` allows running a function at a later interval (ie, runs once)
   - `setInterval` allows running a function at a regular interval (ie, runs regularly with the interval between runs)
@@ -35,7 +37,9 @@ const callback = () => console.log('hi');
 
 const timer = setTimeout(callback, 1000); // console.logs 'hi' after 1s
 
-const intervalTimer = setInterval(callback, 2000); // console.logs 'hi' every 2s
+const callback2 = () => console.log('bye');
+
+const setInterval = setInterval(callback2, 2000); // console.logs 'bye' every 2s
 ```
 
 - In what order will the console.logs execute?
